@@ -10,10 +10,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-forgot-my-pin',
-  templateUrl: 'forgot-my-pin.html',
+  templateUrl: 'forgotmypin.html',
 })
-export class ForgotMyPinPage {
+export class ForgotmypinPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

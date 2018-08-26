@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams, Alert } from "ionic-angular";
 import { AlertController } from "ionic-angular";
 import { Title } from "../../../node_modules/@angular/platform-browser";
-import { SettingsPage } from "../settings/settings";
+import { DashboardPage } from "../dashboard/dashboard";
 /**
  * Generated class for the LoginPage page.
  *
@@ -42,13 +42,15 @@ export class LoginPage {
           text: "Yes",
           handler: () => {
             console.log("Yes clicked");
-            this.navCtrl.setRoot(SettingsPage);
+            this.navCtrl.setRoot(DashboardPage);
           }
         },
         {
           text: "No",
           handler: () => {
             console.log("No clicked");
+            
+            this.navCtrl.setRoot(DashboardPage);
           }
         }
       ]

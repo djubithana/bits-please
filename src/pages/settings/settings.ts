@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
-import { settings } from "cluster";
 /*import { DashboardPage } from "../home/home"; */
 
 /**
@@ -16,13 +15,12 @@ import { settings } from "cluster";
   templateUrl: "settings.html"
 })
 export class SettingsPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  bool:boolean = null;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log(this.bool = true);
+  }
 
   ionViewDidLoad() {
     console.log("ionViewDidLoad SettingsPage");
-  }
-  OnToggle() {}
-  OnClickMenuIcon() {
-    /** this.navCtrl.push(DashboardPage);*/
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
 
-import { ForgotMyPinPage } from "../forgot-my-pin/forgot-my-pin";
+import { ForgotmypinPage } from "../forgotmypin/forgotmypin";
 
 /**
  * Generated class for the BankLoginPage page.
@@ -12,10 +12,9 @@ import { ForgotMyPinPage } from "../forgot-my-pin/forgot-my-pin";
 
 @IonicPage()
 @Component({
-  selector: "page-bank-login",
-  templateUrl: "bank-login.html"
+  templateUrl: "banklogin.html"
 })
-export class BankLoginPage {
+export class BankloginPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
@@ -26,6 +25,6 @@ export class BankLoginPage {
   ScanFingerprint() {}
 
   forgotMyPin() {
-    this.navCtrl.push(ForgotMyPinPage);
+    this.navCtrl.push(ForgotmypinPage);
   }
 }
