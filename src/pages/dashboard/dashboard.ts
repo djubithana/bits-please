@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SettingsPage } from '../settings/settings';
 import { PaymenthistoryPage } from '../paymenthistory/paymenthistory';
 import { QrPage } from '../qr/qr';
+import { SupportedonlinestoresPage } from '../supportedonlinestores/supportedonlinestores';
 
 /**
  * Generated class for the DashboardPage page.
@@ -39,4 +40,7 @@ export class DashboardPage {
     this.navCtrl.push(QrPage);
 }
 
+shopOnline(){
+this.navCtrl.push(SupportedonlinestoresPage);
+}
 }

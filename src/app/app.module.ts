@@ -14,8 +14,12 @@ import { ForgotmypinPage } from '../pages/forgotmypin/forgotmypin';
 import { RegisterPage } from '../pages/register/register';
 import { PaymenthistoryPage } from '../pages/paymenthistory/paymenthistory';
 import { QrPage } from '../pages/qr/qr';
+import { SupportedonlinestoresPage } from '../pages/supportedonlinestores/supportedonlinestores';
 
 import { QRScanner } from '@ionic-native/qr-scanner';
+import { TransactionreceiptPage } from '../pages/transactionreceipt/transactionreceipt';
+
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 
 
 @NgModule({
@@ -29,7 +33,9 @@ import { QRScanner } from '@ionic-native/qr-scanner';
     ForgotmypinPage,
     RegisterPage,
     PaymenthistoryPage,
-    QrPage
+    QrPage,
+    SupportedonlinestoresPage,
+    TransactionreceiptPage
   ],
   imports: [
     BrowserModule,
@@ -46,13 +52,16 @@ import { QRScanner } from '@ionic-native/qr-scanner';
     ForgotmypinPage,
     RegisterPage,
     PaymenthistoryPage,
-    QrPage
+    QrPage,
+    SupportedonlinestoresPage,
+    TransactionreceiptPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    QRScanner
+    QRScanner,
+    FingerprintAIO
   ]
 })
 export class AppModule {}
