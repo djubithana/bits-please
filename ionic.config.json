@@ -1,0 +1,7 @@
+{
+  "name": "paitapin",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
