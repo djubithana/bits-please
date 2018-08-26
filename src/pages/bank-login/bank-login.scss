@@ -1,4 +1,11 @@
+body{
+    // background-image: url("../../assets/imgs/login-bg.jpg");
+}
 page-bank-login {
+    margin-top: 56px;
+    background-image: url("../../assets/imgs/login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 loginLabelBank {
