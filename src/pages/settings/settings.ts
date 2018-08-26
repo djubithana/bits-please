@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
 import { settings } from "cluster";
-import { DashboardPage } from "../home/home";
+/*import { DashboardPage } from "../home/home"; */
 
 /**
  * Generated class for the SettingsPage page.
@@ -23,7 +23,6 @@ export class SettingsPage {
   }
   OnToggle() {}
   OnClickMenuIcon() {
-    this.navCtrl.pop(SettingsPage);
-    this.navCtrl.push(DashboardPage);
+    /** this.navCtrl.push(DashboardPage);*/
   }
 }

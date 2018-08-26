@@ -8,10 +8,13 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-icon id="menu-icon" name="menu" (click)="OnClickMenuIcon()"></ion-icon>
+    <ion-buttons start>
+      <button outline ion-button icon-only menuToggle>
+        <ion-icon id="menuIcon" (click)="OnClickMenuIcon()" name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title id="title">settings</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
