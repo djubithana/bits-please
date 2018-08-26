@@ -1,6 +1,8 @@
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams, Alert } from "ionic-angular";
 import { AlertController } from "ionic-angular";
+import { Title } from "../../../node_modules/@angular/platform-browser";
+import { SettingsPage } from "../settings/settings";
 /**
  * Generated class for the LoginPage page.
  *
@@ -28,6 +30,8 @@ export class LoginPage {
     this.DeviceSettingsPrompt();
   }
 
+  LoadSettingsPage() {}
+
   DeviceSettingsPrompt() {
     const confirm = this.alertCtrl.create({
       title: "Main device settings",
@@ -38,6 +42,7 @@ export class LoginPage {
           text: "Yes",
           handler: () => {
             console.log("Yes clicked");
+            this.navCtrl.setRoot(SettingsPage);
           }
         },
         {
