@@ -20,7 +20,7 @@ export class QrPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private qrScanner:QRScanner, 
     public alertCtrl: AlertController) {
 
-      window.document.querySelector('ion-app').classList.add('transparentBody')
+      window.document.querySelector('ion-app').classList.add('transparentBody');
 
     
     // Optionally request the permission early
@@ -45,7 +45,6 @@ this.qrScanner.prepare()
     this.qrScanner.show()
     .then((data : QRScannerStatus)=> { 
       console.log('datashowing', data.showing);
-      this.alert("Data showing", ""+data.showing);
     },err => {
       this.alert("Error", err);
 
@@ -79,8 +78,7 @@ this.qrScanner.prepare()
   }
 
   ionViewDidLoad() {
-    
-    window.document.querySelector('ion-app').classList.remove('transparentBody')
+    window.document.querySelector('ion-app').classList.remove('transparentBody');
     console.log('ionViewDidLoad QrPage');
   }
 

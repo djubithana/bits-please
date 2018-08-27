@@ -17,11 +17,17 @@
 
 
 <ion-content padding>
+
+    <img id="logo" src="../../assets/imgs/Artboard 1.png">
+
+
+
     <ion-card>
         <ion-card-header>
           <b></b>Balance
         </ion-card-header>
-        <ion-card-content>SRD 560.00
+        <ion-card-content>
+          SRD {{balance}}
         </ion-card-content>
       </ion-card>
 
@@ -30,11 +36,11 @@
           <button ion-fab color="default"><ion-icon name="add"></ion-icon></button>
           <ion-fab-list side="top">
             bank
-            <button ion-fab><ion-icon name="card"></ion-icon></button>
+            <button ion-fab (click)="onClickBank()"><ion-icon name="card"></ion-icon></button>
             Top-Up
             <button ion-fab><ion-icon name="logo-usd"></ion-icon></button>
             account
-            <button ion-fab><ion-icon name="contact" (click)="openPaymentHistory()"></ion-icon></button>
+            <button ion-fab (click)="openPaymentHistory()"><ion-icon name="contact"></ion-icon></button>
           </ion-fab-list>
         </ion-fab>
 

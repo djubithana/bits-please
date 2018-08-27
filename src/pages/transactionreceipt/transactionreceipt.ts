@@ -17,7 +17,11 @@ import { FingerprintAIO} from '@ionic-native/fingerprint-aio';
 })
 export class TransactionreceiptPage {
 
+  public dbp:DashboardPage;
+  public price:number = null;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, private faio:FingerprintAIO) {
+    this.price=4000;
   }
 
   ionViewDidLoad() {
@@ -68,7 +72,7 @@ runFingerprintScanner(){
     clientSecret:'password'
   })
   .then(result =>{
-    this.navCtrl.setRoot('DashboardPage');
+    this.navCtrl.setRoot(DashboardPage, {price:"4000"});
   }
 
   )

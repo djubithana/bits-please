@@ -18,6 +18,7 @@
 
 <ion-content padding>
 
+    <img id="logo" src="../../assets/imgs/Artboard 1.png">
 
   <ion-item>
     <ion-label id='loginLabelBank' floating>PIN</ion-label>
@@ -28,13 +29,10 @@
     <a (click)='forgotMyPin()'>forgot my pin</a>
   </ion-item>
 
-  <ion-item>
-    <button ion-button large (click)="OnLoginBank()"> Login </button>
-  </ion-item>
+  <ion-item id="buttons">
+    <button ion-button block large (click)="OnLoginBank()"> Login </button>
 
-  <ion-item>
-
-    <img src="../../assets/imgs/fingerscan.png" width=25% id='fingerscanIcon' (click)="ScanFingerprint()">
+     <button ion-button block large (click)="ScanFingerprint()"><ion-icon name="finger-print"></ion-icon></button>
 
   </ion-item>
 

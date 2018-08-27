@@ -4,6 +4,7 @@ import { SettingsPage } from '../settings/settings';
 import { PaymenthistoryPage } from '../paymenthistory/paymenthistory';
 import { QrPage } from '../qr/qr';
 import { SupportedonlinestoresPage } from '../supportedonlinestores/supportedonlinestores';
+import { BankloginPage } from '../banklogin/banklogin';
 
 /**
  * Generated class for the DashboardPage page.
@@ -19,7 +20,12 @@ import { SupportedonlinestoresPage } from '../supportedonlinestores/supportedonl
 })
 export class DashboardPage {
 
+  public balance:number = null;
+  public placeholderbalance:number = null;
+  public price:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.placeholderbalance = 5000;
+    this.balance = 5000;
   }
 
   ionViewDidLoad() {
@@ -37,10 +43,15 @@ export class DashboardPage {
   }
 
   scanQR(){
-    this.navCtrl.push(QrPage);
+    this.navCtrl.setRoot(QrPage);
 }
 
 shopOnline(){
 this.navCtrl.push(SupportedonlinestoresPage);
 }
+
+onClickBank(){
+  this.navCtrl.push(BankloginPage);
+}
+
 }
